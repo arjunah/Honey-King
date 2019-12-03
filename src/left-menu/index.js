@@ -11,6 +11,7 @@ function LeftMenu () {
                 <Link to="/">Bee Pollen</Link>
                 <Link to="/">Beeswax</Link>
             </ul>
+            <Link to="/delivery">Orders &amp; Delivery</Link>
             <Link to="/contacts">Contacts</Link>
             <Link to="/about">About Us</Link>
         </div>

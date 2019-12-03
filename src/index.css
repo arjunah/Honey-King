@@ -4,9 +4,17 @@ body {
     font-size: 100%;
 }
 
+.main-container {
+    display:inline-block;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    position: fixed;
+    top: 15vh;
+}
+
 /** Navigation */
 .Navigation {
-    height: 8vh;
+    height: 10vh;
     min-height: fit-content;
     z-index: 1;
 }
@@ -14,6 +22,7 @@ body {
 .nav-links {
     float: left;
     margin-left: 25vw;
+    padding: 3vh;
 }
 
 .nav-userinfo {
@@ -36,10 +45,11 @@ body {
 /** Left Menu */
 
 .LeftMenu {
+    display: inline-block;
     position: sticky;
     height: 100%;
     z-index: 2;
-    top: 8vh;
+    top: 10vh;
 }
 
 .LeftMenu a {
@@ -62,4 +72,15 @@ body {
     width:100%;
     bottom: 0;
     position: fixed;
+}
+
+.Footer a {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.Footer p {
+    margin-bottom: 3vh;
 }
