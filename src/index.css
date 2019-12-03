@@ -1,0 +1,65 @@
+/** Global */
+body {
+    font-family: 'H', 'Trebuchet MS', Helvetica;
+    font-size: 100%;
+}
+
+/** Navigation */
+.Navigation {
+    height: 8vh;
+    min-height: fit-content;
+    z-index: 1;
+}
+
+.nav-links {
+    float: left;
+    margin-left: 25vw;
+}
+
+.nav-userinfo {
+    float: right;
+}
+
+.nav-userinfo a {
+    display: inline-block;
+    margin: 2px;
+    width: 5vw;
+    text-decoration: none;
+}
+
+.nav-links a {
+    margin: 2vw;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+/** Left Menu */
+
+.LeftMenu {
+    position: sticky;
+    height: 100%;
+    z-index: 2;
+    top: 8vh;
+}
+
+.LeftMenu a {
+    display: block;
+    white-space: nowrap;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    text-decoration: none;
+}
+
+.product-list-menu {
+    margin: auto;
+}
+
+/** Footer */
+
+.Footer {
+    clear: both;
+    text-align: center;
+    width:100%;
+    bottom: 0;
+    position: fixed;
+}

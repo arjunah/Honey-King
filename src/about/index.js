@@ -1,11 +1,11 @@
 import React from "react";
 
-function HoneyProducts () {
+function About () {
     return (
         <div>
-            
+            <p>About page.</p>
         </div>
     )
 }
 
-export default HoneyProducts;
+export default About;

@@ -1,16 +1,20 @@
 import React from "react";
-import "./navigation.css";
-import MenuLinks from "../menu-links";
 import ProfileLink from "../profile-link";
 import ShoppingCart from "../shopping-cart";
+import { Link } from "react-router-dom";
 
-function Navigation () {
+function Navigation() {
     return (
         <nav className="Navigation">
             <div className="nav-links">
-                <MenuLinks />
+                <Link to="/">Honey Products</Link>
+                <Link to="/contacts">Contacts</Link>
+                <Link to="/about">About Us</Link>
+                <Link to="/register">Register</Link>
+                <Link to="/login">Login</Link>
             </div>
             <div className="nav-userinfo">
+                <Link to="/logout">Logout</Link>
                 <ProfileLink />
                 <ShoppingCart />
             </div>

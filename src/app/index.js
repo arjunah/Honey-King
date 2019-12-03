@@ -1,5 +1,4 @@
 import React from "react";
-import "./app.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navigation from "../navigation";
 import LeftMenu from "../left-menu";
