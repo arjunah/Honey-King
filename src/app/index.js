@@ -3,7 +3,7 @@ import "./app.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navigation from "../navigation";
 import LeftMenu from "../left-menu";
-import Home from "../home";
+import HoneyProducts from "../honey-products";
 import Login from "../login";
 import Register from "../register";
 import Contacts from "../contacts";
@@ -19,7 +19,7 @@ function App() {
                 <Navigation />
                 <LeftMenu />
                 <Switch>
-                    <Route exact path="/"><Home /></Route>
+                    <Route exact path="/"><HoneyProducts /></Route>
                     <Route exact path="/login"><Login /></Route>
                     <Route exact path="/register"><Register /></Route>
                     <Route exact path="/contacts"><Contacts /></Route>

@@ -1,6 +1,7 @@
 import React from "react";
+import "./honey-products.css";
 
-function Home () {
+function HoneyProducts () {
     return (
         <div>
             
@@ -8,4 +9,4 @@ function Home () {
     )
 }
 
-export default Home;
+export default HoneyProducts;

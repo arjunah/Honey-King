@@ -1,4 +1,5 @@
 import React from "react";
+import "./honey-details.css";
 
 function HoneyDetails () {
     return (

@@ -1,11 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import "./navigation.css";
+import MenuLinks from "../menu-links";
 
 function Navigation () {
     return (
-        <div>
-            
-        </div>
+        <nav>
+            <MenuLinks />
+        </nav>
     )
 }
 
