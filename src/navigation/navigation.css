@@ -1,0 +1,17 @@
+.nav-links {
+    margin-left: 25vw;
+    float: left;
+}
+
+.nav-userinfo {
+    float: right;
+}
+
+.nav-userinfo a {
+    margin: 5px;
+}
+
+.nav-links a {
+    margin: 10%;
+    white-space: nowrap;
+}
