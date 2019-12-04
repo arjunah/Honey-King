@@ -10,6 +10,7 @@ function Navigation() {
                 <Link to="/">Honey Products</Link>
                 <Link to="/contacts">Contacts</Link>
                 <Link to="/about">About Us</Link>
+                <Link to="/delivery">Orders &amp; Delivery</Link>
                 <Link to="/register">Register</Link>
                 <Link to="/login">Login</Link>
             </div>

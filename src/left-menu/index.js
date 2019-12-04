@@ -6,10 +6,10 @@ function LeftMenu () {
         <div className="LeftMenu">
             <Link to="/">Honey Products</Link>
             <ul className="product-list-menu">
-                <Link to="/">Honey</Link>
-                <Link to="/">Propolis</Link>
-                <Link to="/">Bee Pollen</Link>
-                <Link to="/">Beeswax</Link>
+                <Link to="/honey">Honey</Link>
+                <Link to="/propolis">Propolis</Link>
+                <Link to="/pollen">Bee Pollen</Link>
+                <Link to="/beeswax">Beeswax</Link>
             </ul>
             <Link to="/delivery">Orders &amp; Delivery</Link>
             <Link to="/contacts">Contacts</Link>

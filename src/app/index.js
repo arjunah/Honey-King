@@ -22,16 +22,20 @@ function App() {
                 <LeftMenu />
                 <div className="main-container">
                     <Switch>
-                        <Route exact path="/"><HoneyProducts /></Route>
-                        <Route exact path="/login"><Login /></Route>
-                        <Route exact path="/register"><Register /></Route>
-                        <Route exact path="/contacts"><Contacts /></Route>
-                        <Route exact path="/about"><About /></Route>
-                        <Route exact path="/delivery"><Delivery /></Route>
-                        <Route exact path="/hk-admin"><Admin /></Route>
-                        <Route path="/details/:honeyID"><HoneyDetails /></Route>
-                        <Route path="/users/:userID"><UserProfile /></Route>
-                        <Route><NotFound /></Route>
+                        <Route exact path="/" component={HoneyProducts} />
+                        <Route exact path="/login" component={Login} />
+                        <Route exact path="/register" component={Register} />
+                        <Route exact path="/contacts" component={Contacts} />
+                        <Route exact path="/about" component={About} />
+                        <Route exact path="/honey" render={(props) => <HoneyProducts {...props} product={"Honeys."} />} />
+                        <Route exact path="/propolis" render={(props) => <HoneyProducts {...props} product={"Propolis."} />} />
+                        <Route exact path="/pollen" render={(props) => <HoneyProducts {...props} product={"Pollen."} />} />
+                        <Route exact path="/beeswax" render={(props) => <HoneyProducts {...props} product={"Beeswax."} />} />
+                        <Route exact path="/delivery" component={Delivery} />
+                        <Route path="/details/:honeyID" component={HoneyDetails} />
+                        <Route path="/users/:userID" component={UserProfile} />
+                        <Route exact path="/hk-admin" component={Admin} />
+                        <Route component={NotFound} />
                     </Switch>
                 </div>
                 <Footer />
