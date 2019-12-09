@@ -1,45 +1,72 @@
 /** Global */
+html {
+    overflow-y: overlay;
+    background-color: #ff61061f;
+}
+
 body {
-    font-family: 'H', 'Trebuchet MS', Helvetica;
+    font-family: "H", "Trebuchet MS", Helvetica;
     font-size: 100%;
 }
 
 .main-container {
-    display:inline-block;
-    margin-left: 15vw;
-    margin-right: 15vw;
-    position: fixed;
-    top: 15vh;
+    display: block;
+    min-height: 67.5vh;
+    margin-left: 20vw;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 /** Navigation */
 .Navigation {
-    height: 10vh;
-    min-height: fit-content;
+    display: inline-block;
     z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ad4e00;
+    width: 100%;
+    height: 70px;
 }
 
 .nav-links {
-    float: left;
+    position: fixed;
+    top: 25px;
+    display: inline-block;
     margin-left: 20vw;
-    padding: 3vh;
     font-size: 1.2rem;
 }
 
 .nav-userinfo {
-    float: right;
+    position: fixed;
+    right: 0;
+    top: 5px;
+    display: inline-block;
     font-size: 1.1rem;
+}
+
+.Navigation a {
+    color: #ffdbbd;
+}
+
+.Navigation a:hover {
+    color: #e4a979;
+}
+
+.Navigation a:active {
+    color: #ecc2a0;
 }
 
 .nav-userinfo a {
     display: inline-block;
-    margin: 2px;
-    width: 5vw;
+    margin-right: 30px;
+    margin-top: 10px;
     text-decoration: none;
 }
 
 .nav-links a {
-    margin: 1.5vw;
+    margin-right: 55px;
     white-space: nowrap;
     text-decoration: none;
 }
@@ -48,10 +75,12 @@ body {
 
 .LeftMenu {
     display: inline-block;
-    position: sticky;
+    position: fixed;
+    left: 0;
     height: 100%;
+    width: 180px;
     z-index: 2;
-    top: 10vh;
+    top: 90px;
     font-size: 1.2rem;
 }
 
@@ -72,19 +101,35 @@ body {
 
 .Footer {
     clear: both;
+    position: relative;
     text-align: center;
     width:100%;
-    bottom: 0;
-    position: fixed;
+    height: fit-content;
 }
 
 .Footer a {
-    margin-left: 1vw;
-    margin-right: 1vw;
+    margin-right: 20px;
     white-space: nowrap;
     text-decoration: none;
 }
 
-.Footer p {
-    margin-bottom: 3vh;
+/** Credentials Form */
+
+.CredentialsForm {
+    position: relative;
+    margin-top: 40px;
+}
+
+.CredentialsForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.CredentialsForm input {
+    min-width: 250px;
+    margin-bottom: 15px;
+}
+
+.CredentialsForm button {
+    display: block;
 }
