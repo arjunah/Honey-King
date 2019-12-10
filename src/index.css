@@ -4,18 +4,54 @@ html {
     background-color: #ff61061f;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    height: 100%;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #50ad44a6;
+}
+
 body {
     font-family: "H", "Trebuchet MS", Helvetica;
     font-size: 100%;
+    line-height: 1.5;
 }
 
 .main-container {
     display: block;
     min-height: 67.5vh;
     margin-left: 20vw;
+    margin-right: 20vw;
     position: relative;
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 50px;
+    font-size: 1.20rem;
+    color: brown;
+    text-shadow: 1px 1px 2px  #919191;
+}
+
+button {
+    border: none;
+    color: #ffffff;
+    background: brown;
+    border-radius: 8px;
+    font-size: x-large;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: none;
+    box-shadow: 2px 2px 3px 0px #919191;
+}
+
+button:hover {
+    background-color: #6d3f2a
+}
+
+button:active {
+    background-color: #46341c
 }
 
 /** Navigation */
@@ -25,9 +61,10 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #ad4e00;
+    background-color: #dfa55a;
     width: 100%;
     height: 70px;
+    box-shadow: 0px 3px 8px 0px #919191;
 }
 
 .nav-links {
@@ -47,15 +84,15 @@ body {
 }
 
 .Navigation a {
-    color: #ffdbbd;
+    color: brown;
 }
 
 .Navigation a:hover {
-    color: #e4a979;
+    color: #be632e;
 }
 
 .Navigation a:active {
-    color: #ecc2a0;
+    color: #df6743;
 }
 
 .nav-userinfo a {
@@ -77,24 +114,67 @@ body {
     display: inline-block;
     position: fixed;
     left: 0;
-    height: 100%;
-    width: 180px;
+    top: 100px;
+    height: fit-content;
+    width: fit-content;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
     z-index: 2;
-    top: 90px;
     font-size: 1.2rem;
+    background-color: rgb(248, 209, 135);
+    box-shadow: 3px 3px 8px 0px #919191;
+
 }
 
 .LeftMenu a {
     display: block;
     white-space: nowrap;
-    margin-left: 1vw;
-    margin-top: 1vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 4px;
+    margin-top: 4px;
     text-decoration: none;
+    text-align: center;
+    color: brown;
+    background-color: #dfa55a;
+    height: fit-content;
+    width: 180px;
+    border-radius: 5px;
+}
+
+.LeftMenu a:hover {
+    background-color: #cea671;
+}
+
+.LeftMenu a:active {
+    background-color: #cc9b5c;
 }
 
 .product-list-menu {
     font-size: 1.1rem;
     margin: auto;
+    margin-left: -10px;
+}
+
+.product-list-menu a {
+    background-color: #ddad0f;
+    width: 140px;
+    border-radius: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.product-list-menu a:hover {
+    background-color: #ecc74a;
+}
+
+.product-list-menu a:active {
+    background-color: #d6bc65;
 }
 
 /** Footer */
@@ -105,12 +185,15 @@ body {
     text-align: center;
     width:100%;
     height: fit-content;
+    color: brown;
+    text-shadow: 1px 1px 2px  #919191;
 }
 
 .Footer a {
     margin-right: 20px;
     white-space: nowrap;
     text-decoration: none;
+    color: brown;
 }
 
 /** Credentials Form */
@@ -128,6 +211,11 @@ body {
 .CredentialsForm input {
     min-width: 250px;
     margin-bottom: 15px;
+    min-height: 25px;
+    font-size: 1rem;
+    border-color: brown;
+    border-style: solid;
+    border-width: 1px;
 }
 
 .CredentialsForm button {
