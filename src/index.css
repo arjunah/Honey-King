@@ -11,7 +11,7 @@ html {
 
 ::-webkit-scrollbar-thumb {
     border-radius: 5px;
-    background-color: #50ad44a6;
+    background-color: rgba(165, 42, 42, 0.349);
 }
 
 body {
@@ -22,7 +22,7 @@ body {
 
 .main-container {
     display: block;
-    min-height: 67.5vh;
+    min-height: 71vh;
     margin-left: 20vw;
     margin-right: 20vw;
     position: relative;
@@ -117,9 +117,9 @@ button:active {
     top: 100px;
     height: fit-content;
     width: fit-content;
-    padding-top: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-top: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
     padding-bottom: 5px;
     border-radius: 5px;
     z-index: 2;
@@ -194,6 +194,10 @@ button:active {
     white-space: nowrap;
     text-decoration: none;
     color: brown;
+}
+
+.Footer p {
+    margin: 5px;
 }
 
 /** Credentials Form */
