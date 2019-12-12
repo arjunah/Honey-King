@@ -2,7 +2,7 @@
 html {
     overflow-y: overlay;
     overflow-x: hidden;
-    background-color: #ff61061f;
+    background-color: #dda30352;
 }
 
 ::-webkit-scrollbar {
@@ -12,11 +12,11 @@ html {
 
 ::-webkit-scrollbar-thumb {
     border-radius: 5px;
-    background-color: rgba(165, 42, 42, 0.329);
+    background-color: rgba(165, 42, 42, 0.555);
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #ffdfbb;
+    background-color: #faf1e7;
 }
 
 body {
@@ -43,9 +43,9 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: calc(100vh - 135px);
-    margin-left: 15vw;
-    margin-right: 15vw;
+    min-height: calc(100vh - 155px);
+    margin-left: 17vw;
+    margin-right: 17vw;
     position: relative;
     font-size: 1.20rem;
     color: brown;
@@ -62,11 +62,13 @@ button {
     padding-left: 15px;
     padding-right: 15px;
     outline: none;
-    box-shadow: 2px 2px 3px 0px #919191;
+    box-shadow: 2px 2px 1px 0px #919191;
+    transition-duration: 200ms;
 }
 
 button:hover {
-    background-color: #6d3f2a
+    background-color: #6d3f2a;
+    transition-duration: 200ms;
 }
 
 button:active {
@@ -78,13 +80,12 @@ button:active {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 2;
     font-weight: bold;
-    position: sticky;
     background-color: #dfa55a;
     width: 100%;
     height: 70px;
-    box-shadow: 0px 3px 6px 0px #919191;
+    box-shadow: 0px 3px 2px 0px #919191;
 }
 
 .nav-links {
@@ -109,10 +110,12 @@ button:active {
 
 .Navigation a {
     color: brown;
+    transition-duration: 200ms;
 }
 
 .Navigation a:hover {
     color: #be632e;
+    transition-duration: 200ms;
 }
 
 .Navigation a:active {
@@ -132,25 +135,43 @@ button:active {
 
 /** Left Menu */
 
-.LeftMenu {
-    position: sticky;
+.LeftContainer {
+    position: fixed;
     top: 0;
     float: left;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     height: fit-content;
     width: fit-content;
-    margin-top: 50px;
+    z-index: 1;
+}
+
+.Logo {
+    margin: 0 0 0 0;
+}
+
+.LeftContainer img {
+    max-width: 230px;
+    width: auto;
+    height: auto;
+}
+
+.LeftMenu {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 20px;
     margin-right: 20px;
     padding-top: 5px;
     padding-left: 8px;
     padding-right: 8px;
     padding-bottom: 5px;
     border-radius: 5px;
-    z-index: 2;
     font-size: 1.2rem;
     background-color: rgb(248, 209, 135);
-    box-shadow: 3px 3px 6px 0px #919191;
+    box-shadow: 3px 3px 2px 0px #919191;
 
 }
 
@@ -168,10 +189,12 @@ button:active {
     height: fit-content;
     width: 180px;
     border-radius: 5px;
+    transition-duration: 200ms;
 }
 
 .LeftMenu a:hover {
-    background-color: #cea671;
+    background-color: #f0b76c;
+    transition-duration: 200ms;
 }
 
 .LeftMenu a:active {
@@ -185,17 +208,19 @@ button:active {
 }
 
 .product-list-menu a {
-    background-color: #ddad0f;
+    background-color: #dda303;
     width: 140px;
     border-radius: 5px;
     padding-top: 7px;
     padding-bottom: 7px;
     margin-top: 5px;
     margin-bottom: 5px;
+    transition-duration: 200ms;
 }
 
 .product-list-menu a:hover {
     background-color: #ecc74a;
+    transition-duration: 200ms;
 }
 
 .product-list-menu a:active {
@@ -208,6 +233,7 @@ button:active {
     clear: both;
     position: relative;
     text-align: center;
+    margin-top: 20px;
     width:100%;
     height: 60px;
     color: brown;
@@ -257,7 +283,7 @@ button:active {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 97.7%;
+    width: auto;
 }
 
 .Product {
@@ -265,16 +291,20 @@ button:active {
     flex-direction: column;
     width: 300px;
     height: 430px;
-    margin: 25px;
+    margin: 15px;
+    border-radius: 10px;
     background-color: whitesmoke;
-    box-shadow: 3px 3px 6px 0px #919191;
+    box-shadow: 3px 3px 2px 0px #919191;
+    transition-duration: 200ms;
 }
 
 .Product:hover {
     width: 320px;
     height: 440px;
-    margin: 15px;
+    margin: 5px;
     padding-top: 10px;
+    background-color: white;
+    transition-duration: 200ms;
 }
 
 .Product img {
@@ -300,15 +330,27 @@ button:active {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 75%;
+    width: 240px;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin: auto;
 }
 
 .ProductPrice {
     font-size: 1.8rem;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+/** Static Pages Container */
+
+.StaticPageContainer {
+    text-align: left;
+    width: 90%;
+}
+
+.StaticPageContainer h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 0px;
 }

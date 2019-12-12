@@ -3,7 +3,7 @@ import CredentialsForm from "../credentials-form";
 
 function Login () {
     return (
-        <div className="Login">
+        <div className="AuthForms">
             <h1>Login</h1>
             <p>Login to enjoy the full benefits of our site.</p>
             <CredentialsForm />
