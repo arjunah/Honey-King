@@ -27,10 +27,10 @@ function App() {
                         <Route exact path="/register" component={Register} />
                         <Route exact path="/contacts" component={Contacts} />
                         <Route exact path="/about" component={About} />
-                        <Route exact path="/honey" render={props => <HoneyProducts {...props} product={"Honeys."} />} />
-                        <Route exact path="/propolis" render={props => <HoneyProducts {...props} product={"Propolis."} />} />
-                        <Route exact path="/pollen" render={props => <HoneyProducts {...props} product={"Pollen."} />} />
-                        <Route exact path="/beeswax" render={props => <HoneyProducts {...props} product={"Beeswax."} />} />
+                        <Route exact path="/honey" render={props => <HoneyProducts {...props} product={"Honeys"} />} />
+                        <Route exact path="/propolis" render={props => <HoneyProducts {...props} product={"Propolis"} />} />
+                        <Route exact path="/pollen" render={props => <HoneyProducts {...props} product={"Pollen"} />} />
+                        <Route exact path="/beeswax" render={props => <HoneyProducts {...props} product={"Beeswax"} />} />
                         <Route exact path="/delivery" component={Delivery} />
                         <Route path="/details/:honeyID" component={HoneyDetails} />
                         <Route path="/users/:userID" component={UserProfile} />

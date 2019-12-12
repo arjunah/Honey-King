@@ -1,33 +1,52 @@
 /** Global */
 html {
     overflow-y: overlay;
+    overflow-x: hidden;
     background-color: #ff61061f;
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
     height: 100%;
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: 5px;
-    background-color: rgba(165, 42, 42, 0.349);
+    background-color: rgba(165, 42, 42, 0.329);
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ffdfbb;
 }
 
 body {
     font-family: "H", "Trebuchet MS", Helvetica;
     font-size: 100%;
     line-height: 1.5;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 50px;
+    align-self: flex-start;
+    margin-left: 50px;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
 }
 
 .main-container {
-    display: block;
-    min-height: 71vh;
-    margin-left: 20vw;
-    margin-right: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 135px);
+    margin-left: 15vw;
+    margin-right: 15vw;
     position: relative;
-    padding-top: 80px;
-    padding-bottom: 50px;
     font-size: 1.20rem;
     color: brown;
     text-shadow: 1px 1px 2px  #919191;
@@ -56,31 +75,36 @@ button:active {
 
 /** Navigation */
 .Navigation {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     z-index: 1;
-    position: fixed;
-    top: 0;
-    left: 0;
+    font-weight: bold;
+    position: sticky;
     background-color: #dfa55a;
     width: 100%;
     height: 70px;
-    box-shadow: 0px 3px 8px 0px #919191;
+    box-shadow: 0px 3px 6px 0px #919191;
 }
 
 .nav-links {
-    position: fixed;
-    top: 25px;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-left: 20vw;
-    font-size: 1.2rem;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    height: fit-content;
+    width: fit-content;
 }
 
 .nav-userinfo {
-    position: fixed;
-    right: 0;
-    top: 5px;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     font-size: 1.1rem;
+    margin-top: 10px;
+    height: fit-content;
+    width: fit-content;
 }
 
 .Navigation a {
@@ -96,14 +120,12 @@ button:active {
 }
 
 .nav-userinfo a {
-    display: inline-block;
     margin-right: 30px;
-    margin-top: 10px;
     text-decoration: none;
 }
 
 .nav-links a {
-    margin-right: 55px;
+    margin-right: 50px;
     white-space: nowrap;
     text-decoration: none;
 }
@@ -111,12 +133,15 @@ button:active {
 /** Left Menu */
 
 .LeftMenu {
-    display: inline-block;
-    position: fixed;
-    left: 0;
-    top: 100px;
+    position: sticky;
+    top: 0;
+    float: left;
+    display: flex;
+    flex-direction: column;
     height: fit-content;
     width: fit-content;
+    margin-top: 50px;
+    margin-right: 20px;
     padding-top: 5px;
     padding-left: 8px;
     padding-right: 8px;
@@ -125,7 +150,7 @@ button:active {
     z-index: 2;
     font-size: 1.2rem;
     background-color: rgb(248, 209, 135);
-    box-shadow: 3px 3px 8px 0px #919191;
+    box-shadow: 3px 3px 6px 0px #919191;
 
 }
 
@@ -184,7 +209,7 @@ button:active {
     position: relative;
     text-align: center;
     width:100%;
-    height: fit-content;
+    height: 60px;
     color: brown;
     text-shadow: 1px 1px 2px  #919191;
 }
@@ -224,4 +249,66 @@ button:active {
 
 .CredentialsForm button {
     display: block;
+}
+
+/** Products */
+
+.HoneyProducts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 97.7%;
+}
+
+.Product {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 430px;
+    margin: 25px;
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 6px 0px #919191;
+}
+
+.Product:hover {
+    width: 320px;
+    height: 440px;
+    margin: 15px;
+    padding-top: 10px;
+}
+
+.Product img {
+    max-width: 260px;
+    max-height: 260px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.ProductInfo {
+    width: 100%;
+    text-align: center;
+}
+
+.ProductName {
+    margin-top: 20px;
+}
+
+.PriceWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.ProductPrice {
+    font-size: 1.8rem;
+    margin-top: auto;
+    margin-bottom: auto;
 }

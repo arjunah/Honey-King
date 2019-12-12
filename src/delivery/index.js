@@ -2,7 +2,7 @@ import React from "react";
 
 function Delivery () {
     return (
-        <div>
+        <div className="StaticPageContainer">
             <h1>Orders &amp; Delivery</h1>
             <p>Orders and Delivery page.</p>
         </div>
