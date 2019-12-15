@@ -13,11 +13,9 @@ dbConnector().then(() => {
         origin: "http://localhost:3000",
         credentials: true
     }))
-
     app.use(express.urlencoded({ extended: true }));
-
     app.use(cookieParser(cookieSecret));
-
+    app.use(express.json());
     app.use("/", router);
 
     app.listen(envConfig.port, console.log(`Listening on port ${envConfig.port}...`));

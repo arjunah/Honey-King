@@ -1,11 +1,13 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 function Contacts () {
     return (
-        <div className="StaticPageContainer">
+        <Fragment>
             <h1>Contacts</h1>
-            <p>Contacts page.</p>
-        </div>
+            <div className="StaticPageContainer">
+                <p>Contacts page.</p>
+            </div>
+        </Fragment>
     )
 }
 

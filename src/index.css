@@ -19,6 +19,13 @@ html {
     background-color: #faf1e7;
 }
 
+::placeholder {
+    color: rgba(128, 128, 128, 0.507);
+    font-size: 0.9rem;
+    font-style: italic;
+    text-indent: 5px;
+}
+
 body {
     font-family: "H", "Trebuchet MS", Helvetica;
     font-size: 100%;
@@ -30,8 +37,7 @@ body {
 
 h1 {
     margin-top: 50px;
-    align-self: flex-start;
-    margin-left: 50px;
+    text-align: center;
 }
 
 h2 {
@@ -215,10 +221,10 @@ button:active {
     background-color: #dda303;
     width: 140px;
     border-radius: 5px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: 7px;
+    margin-bottom: 7px;
     transition-duration: 200ms;
 }
 
@@ -268,13 +274,14 @@ button:active {
 }
 
 .CredentialsForm input {
-    min-width: 250px;
+    min-width: 300px;
     margin-bottom: 15px;
     min-height: 25px;
     font-size: 1rem;
     border-color: brown;
     border-style: solid;
     border-width: 1px;
+    border-radius: 5px;
 }
 
 .CredentialsForm button {
@@ -372,12 +379,10 @@ button:active {
 /** Static Pages Container */
 
 .StaticPageContainer {
-    text-align: left;
     width: 90%;
+    text-align: left;
 }
 
-.StaticPageContainer h1 {
+.StaticPageContainer h2 {
     text-align: center;
-    margin-top: 50px;
-    margin-left: 0px;
 }

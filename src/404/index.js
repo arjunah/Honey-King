@@ -1,11 +1,13 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 function NotFound () {
     return (
-        <div className="StaticPageContainer">
+        <Fragment>
             <h1>404</h1>
-            <p>Page not found.</p>
-        </div>
+            <div className="StaticPageContainer">
+                <h2>Page not found.</h2>
+            </div>
+        </Fragment>
     )
 }
 

@@ -1,11 +1,13 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 function ServerError () {
     return (
-        <div className="StaticPageContainer">
+        <Fragment>
             <h1>500</h1>
-            <p>Something went wrong...</p>
-        </div>
+            <div className="StaticPageContainer">
+                <h2>Something went wrong...</h2>
+            </div>
+        </Fragment>
     )
 }
 

@@ -1,11 +1,11 @@
 const { Cube, Accessory, User, BlacklistToken } = require("../models");
 
 // ERROR HANDLER
-function clientErrorHandler(res, route, error, renderVariables) {
+function clientErrorHandler(res, error) {
     if (error.name === "ValidationError") {
-        res.render(route, { errors: error.errors, ...renderVariables });
+        res.status(400).send({ errors: error.errors });
     } else {
-        res.render("500", { ...renderVariables });
+        res.status(500).end();
     }
 }
 

@@ -1,11 +1,13 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 function Delivery () {
     return (
-        <div className="StaticPageContainer">
+        <Fragment>
             <h1>Orders &amp; Delivery</h1>
-            <p>Orders and Delivery page.</p>
-        </div>
+            <div className="StaticPageContainer">
+                <p>Orders and Delivery page.</p>
+            </div>
+        </Fragment>
     )
 }
 
