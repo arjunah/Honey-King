@@ -163,7 +163,7 @@ button:active {
     display: flex;
     flex-direction: column;
     height: fit-content;
-    width: fit-content;
+    width: 183px;
     margin-top: 20px;
     margin-right: 20px;
     padding-top: 5px;
@@ -191,11 +191,13 @@ button:active {
     height: fit-content;
     width: 180px;
     border-radius: 5px;
+    box-shadow: 2px 2px 1px 0px #919191;
     transition-duration: 200ms;
 }
 
 .LeftMenu a:hover {
     background-color: #f0b76c;
+    margin-left: 3px;
     transition-duration: 200ms;
 }
 
@@ -291,11 +293,12 @@ button:active {
 .Product {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 300px;
     height: 430px;
     margin: 15px;
     border-radius: 10px;
-    background-color: whitesmoke;
+    background-color: white;
     box-shadow: 3px 3px 2px 0px #919191;
     transition-duration: 200ms;
 }
@@ -305,7 +308,6 @@ button:active {
     height: 440px;
     margin: 5px;
     padding-top: 10px;
-    background-color: white;
     transition-duration: 200ms;
 }
 
@@ -324,8 +326,31 @@ button:active {
     text-align: center;
 }
 
-.ProductName {
-    margin-top: 20px;
+.out-of-stock, .few-in-stock, .in-stock {
+    width: fit-content;
+    margin: auto;
+    margin-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 0.8rem;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.in-stock {
+    background-color: rgba(0, 128, 0, 0.411);
+    color: rgb(6, 85, 6);
+}
+
+.few-in-stock {
+    background-color: rgba(190, 190, 0, 0.637);
+    color: rgb(102, 102, 18);
+}
+
+.out-of-stock {
+    background-color: rgba(138, 0, 0, 0.281);
+    color: rgb(138, 0, 0);
 }
 
 .PriceWrapper {
@@ -333,8 +358,8 @@ button:active {
     flex-direction: row;
     justify-content: space-between;
     width: 240px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
     margin: auto;
 }
 
