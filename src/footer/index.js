@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Footer () {
     const year = new Date().getFullYear();
     return (
-        <footer className= "Footer">
+        <footer className= "footer">
             <p className="footer-links">
                 <Link to="/">Honey Products</Link>
                 <Link to="/delivery">Orders &amp; Delivery</Link>

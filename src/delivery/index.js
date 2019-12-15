@@ -4,7 +4,7 @@ function Delivery () {
     return (
         <Fragment>
             <h1>Orders &amp; Delivery</h1>
-            <div className="StaticPageContainer">
+            <div className="static-page-container">
                 <p>Orders and Delivery page.</p>
             </div>
         </Fragment>

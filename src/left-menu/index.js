@@ -4,11 +4,11 @@ import Logo from "../static/honey-king-logo.png";
 
 function LeftMenu () {
     return (
-        <div className="LeftContainer">
-            <div className="Logo">
+        <div className="left-container">
+            <div className="logo">
                 <img src={Logo} alt="Honey King"/>
             </div>
-            <div className="LeftMenu">
+            <div className="left-menu">
                 <Link to="/">Honey Products</Link>
                 <ul className="product-list-menu">
                     <Link to="/honey">Honey</Link>

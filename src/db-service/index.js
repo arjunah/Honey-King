@@ -4,7 +4,8 @@ export const routes = {
     getPropolis: "http://localhost:9000/propolis",
     getBeeswax: "http://localhost:9000/beeswax",
     getPollen: "http://localhost:9000/pollen",
-    registerUser: "http://localhost:9000/users/register"
+    registerUser: "http://localhost:9000/users/register",
+    loginUser: "http://localhost:9000/users/login"
 }
 
 export const db = {

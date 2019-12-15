@@ -17,7 +17,7 @@ import NotFound from "../404";
 function App() {
     return (
         <Router>
-            <div className="App">
+            <div className="app">
                 <Navigation />
                 <LeftMenu />
                 <div className="main-container">

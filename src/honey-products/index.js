@@ -35,7 +35,7 @@ function HoneyProducts ({ product }) {
         return (
             <Fragment>
                 <h1>{product || "All Products"}</h1>
-                <div className="HoneyProducts">
+                <div className="honey-products">
                     <Product products={products} />
                 </div>
             </Fragment>

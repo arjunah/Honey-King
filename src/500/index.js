@@ -4,7 +4,7 @@ function ServerError () {
     return (
         <Fragment>
             <h1>500</h1>
-            <div className="StaticPageContainer">
+            <div className="static-page-container">
                 <h2>Something went wrong...</h2>
             </div>
         </Fragment>

@@ -4,7 +4,7 @@ function About () {
     return (
         <Fragment>
             <h1>About Us</h1>
-            <div className="StaticPageContainer">
+            <div className="static-page-container">
                 <p>About page.</p>
             </div>
         </Fragment>

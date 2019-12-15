@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Navigation() {
     return (
-        <nav className="Navigation">
+        <nav className="navigation">
             <div className="nav-links">
                 <Link to="/">Honey Products</Link>
                 <Link to="/delivery">Orders &amp; Delivery</Link>

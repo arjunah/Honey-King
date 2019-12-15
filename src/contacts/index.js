@@ -4,7 +4,7 @@ function Contacts () {
     return (
         <Fragment>
             <h1>Contacts</h1>
-            <div className="StaticPageContainer">
+            <div className="static-page-container">
                 <p>Contacts page.</p>
             </div>
         </Fragment>

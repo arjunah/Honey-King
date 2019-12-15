@@ -15,14 +15,14 @@ function Product ({ products }) {
             statusClass = "in-stock";
         }
         return (
-            <div key={product._id} className="Product">
+            <div key={product._id} className="product">
                 <img src={product.imageURL} alt="Honey Product"/>
-                <div className="ProductInfo">
-                    <h2 className="ProductName">{product.name}</h2>
+                <div className="product-info">
+                    <h2 className="product-name">{product.name}</h2>
                     <div className={statusClass}>{status}</div>
-                    <div className="PriceWrapper">
-                        <div className="ProductPrice">{product.price} BGN</div>
-                        <button className="BuyButton">Buy</button>
+                    <div className="price-wrapper">
+                        <div className="product-price">{product.price} BGN</div>
+                        <button className="buy-button">Buy</button>
                     </div>
                 </div>
             </div>
