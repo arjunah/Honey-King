@@ -20,6 +20,6 @@ export const db = {
             },
             credentials: "include",
             body: JSON.stringify(data)
-        })
+        });
     }
 }

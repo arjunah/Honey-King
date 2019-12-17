@@ -30,8 +30,10 @@ const user = {
     
         newUser.save(function (error) {
             if (error) {
-                clientErrorHandler(res, error)
+                clientErrorHandler(res, error);
+                return;
             }
+            res.status(201).send("User created.");
         });
     },
     login: function (req, res) {

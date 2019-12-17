@@ -3,7 +3,7 @@ const { Cube, Accessory, User, BlacklistToken } = require("../models");
 // ERROR HANDLER
 function clientErrorHandler(res, error) {
     if (error.name === "ValidationError") {
-        res.status(400).send({ errors: error.errors });
+        res.status(400).send(error.errors);
     } else {
         res.status(500).end();
     }
@@ -41,7 +41,7 @@ async function loginUser(res, username, password) {
     try {
         user = await checkIfUserExists(username);
     } catch (error) {
-        clientErrorHandler(res, null, error);
+        clientErrorHandler(res, error);
     }
     if (!user) {
         const noSuchUserError = {
